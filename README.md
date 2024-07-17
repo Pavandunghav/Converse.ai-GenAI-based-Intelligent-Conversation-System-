@@ -1,5 +1,6 @@
-# Finace-Conversational-Platform-
+# Bank Conversational AI System 
 This is repository build for the project competition for Cognizant Placement Program.
+
 
 
 
