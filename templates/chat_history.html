@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat History - Banking Customer Support</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat_history.css') }}">
+</head>
+<body>
+    <div class="chat-history-container">
+        <h2>Chat History</h2>
+        <div class="chat-messages">
+            {% for message in messages %}
+                <div class="message {% if message.is_customer %}customer-message{% else %}rep-message{% endif %}">
+                    <span class="timestamp">{{ message.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</span>
+                    <span class="user">{% if message.is_customer %}Customer{% else %}Representative{% endif %}</span>
+                    <p>{{ message.content }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('index') }}" class="back-button">Back to Chat</a>
+    </div>
+</body>
+</html>

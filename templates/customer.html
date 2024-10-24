@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConverseBank - Your Trusted Financial Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customer.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i> ConverseBank
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-secondary">Login</a>
+                    <a href="#" class="btn btn-primary">Open Account</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-text">Banking for the Digital Age</h1>
+                    <p>Experience secure, convenient, and innovative banking with Converse Bank. Manage your finances anytime, anywhere.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-video">
+                <video autoplay muted loop>
+                    <source src="static\assets\bank-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Banking</h3>
+                        <p>Access your accounts on-the-go with our user-friendly mobile app.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Secure Transactions</h3>
+                        <p>State-of-the-art security measures to protect your financial data.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Investment Services</h3>
+                        <p>Grow your wealth with our expert investment advice and tools.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Credit Cards</h3>
+                        <p>Choose from a variety of credit cards tailored to your lifestyle.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-secondary">See All Features</a>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="savings-account.jpg" alt="Savings Account">
+                        <h3>Savings Account</h3>
+                        <p class="product-description">Grow your savings with competitive interest rates.</p>
+                        <a href="#" class="btn btn-tertiary">Learn More</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="mortgage.jpg" alt="Mortgage">
+                        <h3>Mortgage</h3>
+                        <p class="product-description">Find the perfect home loan for your needs.</p>
+                        <a href="#" class="btn btn-tertiary">Learn More</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="investment.jpg" alt="Investment">
+                        <h3>Investment</h3>
+                        <p class="product-description">Diversify your portfolio with our investment options.</p>
+                        <a href="#" class="btn btn-tertiary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-carousel">
+                    <div class="testimonial">
+                        <img src="customer1.jpg" alt="Vaibhav Pawar">
+                        <p>"ConverseBank has transformed the way I manage my finances. Their mobile app is incredibly intuitive!"</p>
+                        <div class="customer-info">
+                            <h4>Vaibhav Pawar</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more testimonials here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@Conversebank.com</p>
+                    <p>Phone: +91 9876543210</p>
+                    <p>Address: Opp Dy Patil Engineering College , Sant-Tukaram Nagar, Pimpri -411018</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ConverseBank. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chat-widget" class="chat-widget minimized length">
+        <div id="chat-header" class="chat-header">
+            <button id="toggle-chat"><i class="fas fa-comments"></i></button>
+        </div>
+        <div id="chat-body" class="chat-body">
+            <div id="chat-messages"></div>
+            <div id="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="mic-button" >
+                    <i class="fa-solid fa-microphone" id="mic"></i>
+                </button>
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/customer.js') }}"></script>
+</body>
+</html>
